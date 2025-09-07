@@ -4,3 +4,15 @@ obj/
 *.user
 *.suo
 *.vscode/
+
+# Build results
+bin/
+obj/
+out/
+
+# ASP.NET Core logs
+*.log
+
+# App settings (jangan masuk repo)
+appsettings.json
+appsettings.*.json
