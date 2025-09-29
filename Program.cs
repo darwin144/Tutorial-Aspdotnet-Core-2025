@@ -1,7 +1,7 @@
 
 using CArch_V1.Interface;
-using CArch_V1.Models;
 using CArch_V1.Repository;
+using EntityData.Models;
 using Microsoft.EntityFrameworkCore;
 
 namespace CArch_V1

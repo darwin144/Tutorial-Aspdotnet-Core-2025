@@ -1,4 +1,5 @@
-﻿using CArch_V1.Models;
+﻿
+using EntityData.Models;
 
 namespace CArch_V1.Interface
 {

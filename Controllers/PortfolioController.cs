@@ -15,8 +15,6 @@ namespace CArch_V1.Controllers
             _repo = repo;
         }
 
-
-
         [HttpGet]
         public async Task<IActionResult> GetAll()
         {

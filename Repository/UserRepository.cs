@@ -1,5 +1,5 @@
 ﻿using CArch_V1.Interface;
-using CArch_V1.Models;
+using EntityData.Models;
 using Microsoft.EntityFrameworkCore;
 
 
