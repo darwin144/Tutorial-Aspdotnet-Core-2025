@@ -1,0 +1,25 @@
+﻿@* @model GArch_Web.ViewModels.OrderVM
+
+<form id="dynamicForm" asp-action="SubmitDynamicForm" asp-controller="Workflow" method="post">
+    <input type="hidden" name="viewModelType" value="Order" />
+    <div class="mb-3">
+        <label asp-for="Id" class="form-label">ID</label>
+        <input asp-for="Id" class="form-control" readonly />
+    </div>
+    <div class="mb-3">
+        <label asp-for="CustomerName" class="form-label">Customer Name</label>
+        <input asp-for="CustomerName" class="form-control" />
+        <span asp-validation-for="CustomerName" class="text-danger"></span>
+    </div>
+    <div class="mb-3">
+        <label asp-for="Amount" class="form-label">Amount</label>
+        <input asp-for="Amount" class="form-control" type="number" step="0.01" />
+        <span asp-validation-for="Amount" class="text-danger"></span>
+    </div>
+    <!-- Tambah field lain sesuai VM -->
+    <button type="button" class="btn btn-danger">Cancel</button>
+    <button type="submit" class="btn btn-primary">Save</button>
+</form>
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" /> <!-- Jika pakai jQuery validation -->
+} *@

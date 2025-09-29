@@ -1,0 +1,54 @@
+﻿<!-- Versi terbaru Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+<link rel="stylesheet" href="https://cdn.datatables.net/1.13.6/css/jquery.dataTables.min.css">
+
+<!-- jQuery harus di-load sebelum skrip lain -->
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<!-- JS DataTables -->
+<script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
+
+<script src="/js/Users.js"></script>
+<script src="/js/validator.js"></script>
+<script src="/js/site.js"></script>
+
+<style>
+    #userTable_length{
+        margin-top:10px;
+    }
+</style>
+
+<button class="btn btn-primary" onclick="openModal('User')">
+        <i class="fa fa-plus"></i>Tambah User
+</button>
+<table id="userTable" class="table table-bordered">
+    <thead>
+        <tr>
+            <th> Id</th>
+            <th> Username</th>
+            <th> Password</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody>
+    </tbody>
+</table>
+
+<!-- Modal -->
+<div class="modal fade" id="dynamicModal" tabindex="-1" aria-labelledby="modalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <form id="dynamicForm">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalLabel">Form Dinamis</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body" id="modalBody">
+                    <!-- Dynamic content will be injected here -->
+                </div>
+                <div class="modal-footer">
+                    <button type="submit" class="btn btn-primary">Simpan euy</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
